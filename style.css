@@ -1024,30 +1024,64 @@ select, input, textarea {
    MARQUEE
 ════════════════════════════════════════════════════════════════════ */
 .marquee-section {
+  padding: 28px 0;
+  background: var(--bg-card);
   position: relative;
-  z-index: 5;
-  padding: 20px 0;
-  background: linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(6,182,212,0.05) 100%);
-  border-top: 1px solid rgba(37,99,235,0.15);
-  border-bottom: 1px solid rgba(37,99,235,0.15);
   overflow: hidden;
+  display: flex;
+  z-index: 10;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
-.marquee-track { overflow: hidden; }
+.marquee-section::before,
+.marquee-section::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-section::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-card), transparent);
+}
+.marquee-section::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-card), transparent);
+}
+
+.marquee-scroll {
+  will-change: transform;
+}
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+.mq-left {
+  animation: marqueeLeft 30s linear infinite;
+}
+@keyframes marqueeLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 .marquee-inner {
   display: flex;
   align-items: center;
-  gap: 24px;
-  white-space: nowrap;
-  animation: marquee 30s linear infinite;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  letter-spacing: 0.04em;
+  gap: 40px;
+  padding-right: 40px;
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  text-transform: uppercase;
 }
-.marquee-inner .mx { color: var(--blue-core); }
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.marquee-inner .mx {
+  color: var(--blue-glow);
+  font-size: 0.75rem;
 }
 
 /* ════════════════════════════════════════════════════════════════════
@@ -1679,6 +1713,8 @@ a.contact-card:hover {
 }
 @media (max-width: 768px) {
   .hero-inner { padding: 100px 24px 60px; }
+  .marquee-section { padding: 16px 0; }
+  .marquee-inner { font-size: 1rem; gap: 24px; padding-right: 24px; }
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
   .services-bento { grid-template-columns: 1fr; }

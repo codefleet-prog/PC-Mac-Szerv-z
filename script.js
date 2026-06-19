@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormSubmit();
   initNavActiveLinks();
   initCalculator();
+  initMarquee();
 });
 
 // ── NAVBAR ────────────────────────────────────────────────────────────
@@ -418,9 +419,31 @@ function initCalculator() {
 // ── SPIN KEYFRAME for button ─────────────────────────────────────────
 (function injectSpin() {
   const s = document.createElement('style');
-  s.textContent = '@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }';
+  s.textContent = '@keyframes btnSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}';
   document.head.appendChild(s);
 })();
+
+// ── MARQUEE SCROLL DRIVEN ──────────────────────────────────────────────
+function initMarquee() {
+  const scroll1 = document.getElementById('mq-scroll-1');
+  if (!scroll1) return;
+
+  // Optimize with requestAnimationFrame
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        // Subtle offset based on scroll
+        scroll1.style.transform = `translateX(${-lastScrollY * 0.15}px)`;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
 
 // ── PARALLAX HERO ORBS ────────────────────────────────────────────────────────
 (function initParallax() {
