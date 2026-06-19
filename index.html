@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC-Mac Szervíz Székesfehérvár | Apple & PC Javítás</title>
+  <meta name="description" content="Professzionális Apple Mac és PC számítógép szerviz Székesfehérváron. Gyors, megbízható javítás, alkatrészcsere, adatmentés. Hívjon minket!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo pill -->
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <div class="logo-pill">
+          <div class="logo-icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <span class="logo-pill-text">PC·MAC <em>Szervíz</em></span>
+        </div>
+      </a>
+
+      <!-- Center nav -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services" class="nav-link"><span class="nav-num">01</span>Szolgáltatások</a></li>
+        <li><a href="#why" class="nav-link"><span class="nav-num">02</span>Miért mi?</a></li>
+        <li><a href="#process" class="nav-link"><span class="nav-num">03</span>Folyamat</a></li>
+        <li><a href="#calculator" class="nav-link"><span class="nav-num">04</span>Kalkulátor</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-num">05</span>Kapcsolat</a></li>
+      </ul>
+
+      <!-- Right cluster -->
+      <div class="nav-right">
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#services" class="nav-mobile-link">Szolgáltatások</a>
+      <a href="#why" class="nav-mobile-link">Miért mi?</a>
+      <a href="#process" class="nav-mobile-link">Folyamat</a>
+      <a href="#calculator" class="nav-mobile-link">Kalkulátor</a>
+      <a href="#contact" class="nav-mobile-link">Kapcsolat</a>
+      <a href="tel:+36203986002" class="nav-mobile-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:middle"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+36 20 398 6002</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════ HERO ══════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-particles" id="hero-particles"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-content minimalist-mode">
+      <div class="hero-headline reveal-up">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span class="hero-eyebrow-text">SZÉKESFEHÉRVÁR</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="ht-outline">SZÁMÍTÓGÉP</span>
+          <span class="ht-solid">SZERVÍZ.</span>
+        </h1>
+      </div>
+
+      <p class="hero-desc reveal-up" style="--delay:0.1s">
+        Laptoptól asztali számítógépig, Apple Mac-től Windows PC-ig — 
+        <strong>gyors diagnózis, szakszerű javítás.</strong>
+      </p>
+
+      <div class="hero-actions reveal-up" style="--delay:0.2s">
+        <a href="tel:+36203986002" class="btn-primary" id="hero-call-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.46a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Hívjon most
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right" style="--delay:0.2s">
+      <div class="device-showcase">
+        <div class="device-card device-card-mac">
+          <div class="device-screen">
+            <div class="screen-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="screen-content">
+              <div class="diag-line"></div>
+              <div class="diag-line short"></div>
+              <div class="diag-badge ok">✓ Rendszer OK</div>
+            </div>
+          </div>
+          <div class="device-label">MacBook Pro</div>
+        </div>
+        <div class="device-card device-card-pc">
+          <div class="pc-icon">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="64" height="48" rx="4" stroke="currentColor" stroke-width="3"/>
+              <line x1="8" y1="36" x2="72" y2="36" stroke="currentColor" stroke-width="2"/>
+              <rect x="30" y="60" width="20" height="6" rx="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="20" y1="66" x2="60" y2="66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="device-label">Windows PC</div>
+        </div>
+        <div class="device-card device-card-phone">
+          <div class="phone-icon">
+            <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="52" height="72" rx="8" stroke="currentColor" stroke-width="3"/>
+              <circle cx="30" cy="68" r="4" stroke="currentColor" stroke-width="2"/>
+              <rect x="22" y="14" width="16" height="2" rx="1" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="device-label">iPhone / iPad</div>
+        </div>
+        <div class="floating-badge fb-1">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></span> Gyors javítás
+        </div>
+        <div class="floating-badge fb-2">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span> Adatbiztonság
+        </div>
+        <div class="floating-badge fb-3">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg></span> Garancia
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ MARQUEE ═══════════════════════════════════ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>Apple Mac Javítás</span><span class="mx">◆</span>
+        <span>Windows PC Szerviz</span><span class="mx">◆</span>
+        <span>Laptop Képernyő Csere</span><span class="mx">◆</span>
+        <span>Adatmentés</span><span class="mx">◆</span>
+        <span>Vírusirtás</span><span class="mx">◆</span>
+        <span>SSD Upgrade</span><span class="mx">◆</span>
+        <span>MacBook Akkumulátor Csere</span><span class="mx">◆</span>
+        <span>Hálózat Beállítás</span><span class="mx">◆</span>
+        <span>Apple Mac Javítás</span><span class="mx">◆</span>
+        <span>Windows PC Szerviz</span><span class="mx">◆</span>
+        <span>Laptop Képernyő Csere</span><span class="mx">◆</span>
+        <span>Adatmentés</span><span class="mx">◆</span>
+        <span>Vírusirtás</span><span class="mx">◆</span>
+        <span>SSD Upgrade</span><span class="mx">◆</span>
+        <span>MacBook Akkumulátor Csere</span><span class="mx">◆</span>
+        <span>Hálózat Beállítás</span><span class="mx">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════ SERVICES ═════════════════════════════════════ -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Szolgáltatások</div>
+        <h2 class="section-title">Mindent megjavítunk,<br/><span class="gradient-text">amit összetörtek</span></h2>
+        <p class="section-desc">Teljes körű számítógép szerviz szolgáltatás Székesfehérváron, gyors és szakszerű kivitelezéssel.</p>
+      </div>
+
+      <div class="services-bento">
+        <div class="bento-card bento-large reveal-up" style="--delay:0.1s" id="service-mac">
+          <div class="bento-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+          <h3>Apple Mac Szerviz</h3>
+          <p>MacBook Air, MacBook Pro, iMac, Mac Mini — minden Apple készüléket megjavítunk. Képernyőcsere, akkumulátor, billentyűzet, logika lap javítás.</p>
+          <ul class="bento-list">
+            <li>MacBook képernyő csere</li>
+            <li>Akkumulátor csere</li>
+            <li>Folyadékkár javítás</li>
+            <li>macOS telepítés/visszaállítás</li>
+          </ul>
+          <div class="bento-badge">Apple szakszervíz</div>
+        </div>
+
+        <div class="bento-card reveal-up" style="--delay:0s" id="service-pc">
+          <div class="bento-icon small"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
+          <h3>Windows PC &amp; Laptop Javítás</h3>
+          <p>Dell, Lenovo, HP, ASUS, Acer — bármilyen márkájú laptopot és asztali gépet vállalunk.</p>
+          <div class="bento-badge accent">Minden márka</div>
+        </div>
+
+        <div class="bento-card reveal-up" style="--delay:0.15s" id="service-data">
+          <div class="bento-icon small"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg></div>
+          <h3>Adatmentés</h3>
+          <p>Törölt, sérült, formázott meghajtókról profi adatvisszaállítás. HDD, SSD, pendrive.</p>
+          <div class="bento-badge success">Magas sikerarány</div>
+        </div>
+
+        <div class="bento-card bento-wide reveal-up" style="--delay:0.2s" id="service-upgrade">
+          <div class="bento-icon small"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></div>
+          <h3>Upgrade &amp; Optimalizálás</h3>
+          <p>Tegye gyorsabbá régi számítógépét! SSD csere, RAM bővítés, tisztítás, operációs rendszer friss telepítése. Átlagban 3x-os sebességnövekedés.</p>
+          <div class="upgrade-bars">
+            <div class="ubar">
+              <span>Régi HDD</span>
+              <div class="bar-track"><div class="bar-fill slow" style="--w:25%"></div></div>
+              <span class="speed">100 MB/s</span>
+            </div>
+            <div class="ubar">
+              <span>Új SSD</span>
+              <div class="bar-track"><div class="bar-fill fast" style="--w:90%"></div></div>
+              <span class="speed">550 MB/s</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-card reveal-up" style="--delay:0.25s" id="service-virus">
+          <div class="bento-icon small"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+          <h3>Vírusirtás &amp; Biztonság</h3>
+          <p>Malware, kémprogram, zsarolóvírus eltávolítás és védelem telepítés.</p>
+          <div class="bento-badge warning">Gyors megoldás</div>
+        </div>
+
+        <div class="bento-card reveal-up" style="--delay:0.3s" id="service-network">
+          <div class="bento-icon small"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg></div>
+          <h3>Hálózat &amp; WiFi</h3>
+          <p>Router beállítás, hálózati hibák elhárítása, WiFi optimalizálás otthon és irodában.</p>
+          <div class="bento-badge">Házon belüli szolgáltatás</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ WHY US ════════════════════════════════════ -->
+  <section id="why" class="why-section">
+    <div class="why-bg">
+      <div class="why-orb"></div>
+    </div>
+    <div class="container">
+      <div class="why-layout">
+        <div class="why-left reveal-left">
+          <div class="section-tag">Miért mi?</div>
+          <h2 class="section-title">A helyes döntés<br/><span class="gradient-text">mindig egyértelmű</span></h2>
+          <p class="why-desc">Évek tapasztalatával, becsületes árakkal és valódi szakértelemmel dolgozunk. Nem csupán megjavítjuk, hanem elmagyarázzuk a problémát.</p>
+          <a href="#contact" class="btn-primary">Kapcsolatfelvétel</a>
+        </div>
+        <div class="why-right">
+          <div class="why-card reveal-right" style="--delay:0s" id="why-fast">
+            <div class="why-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></div>
+            <div class="why-card-content">
+              <h4>Gyors átfutás</h4>
+              <p>A legtöbb javítást 24 órán belül elvégezzük. Azonnali diagnózis, azonnali megoldás.</p>
+            </div>
+          </div>
+          <div class="why-card reveal-right" style="--delay:0.1s" id="why-honest">
+            <div class="why-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+            <div class="why-card-content">
+              <h4>Átlátható árak</h4>
+              <p>Előre megmondott, fix árak. Rejtett költség nélkül. Javítás előtt egyeztetünk.</p>
+            </div>
+          </div>
+          <div class="why-card reveal-right" style="--delay:0.2s" id="why-warranty">
+            <div class="why-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+            <div class="why-card-content">
+              <h4>Garancia minden munkára</h4>
+              <p>Minden elvégzett javításra garanciát vállalunk. Az Ön biztonsága az első.</p>
+            </div>
+          </div>
+          <div class="why-card reveal-right" style="--delay:0.3s" id="why-data">
+            <div class="why-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+            <div class="why-card-content">
+              <h4>Adatvédelem</h4>
+              <p>Az Ön adatai biztonságban vannak nálunk. Diszkrét és megbízható kezelés garantált.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROCESS ═══════════════════════════════════ -->
+  <section id="process" class="process-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Folyamat</div>
+        <h2 class="section-title">Négy egyszerű lépés<br/><span class="gradient-text">a megoldásig</span></h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step reveal-up" style="--delay:0s" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <h4>Kapcsolatfelvétel</h4>
+            <p>Hívjon vagy írjon üzenetet. Elmondja a problémát, mi azonnal tanácsot adunk.</p>
+          </div>
+        </div>
+        <div class="process-step reveal-up" style="--delay:0.1s" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+            <h4>Ingyenes bevizsgálás</h4>
+            <p>Gyors és pontos hibafeltárás. Megmonduk, mi a probléma és mennyibe kerül a javítás.</p>
+          </div>
+        </div>
+        <div class="process-step reveal-up" style="--delay:0.2s" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <h4>Szakszerű javítás</h4>
+            <p>Szakszerű javítás eredeti vagy minőségi alkatrészekkel. Folyamatos tájékoztatás.</p>
+          </div>
+        </div>
+        <div class="process-step reveal-up" style="--delay:0.3s" id="step-4">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+            <h4>Átadás és tesztelés</h4>
+            <p>Garanciával visszakapja készülékét. Teljes tesztelés, minden rendben.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════ TESTIMONIALS ═════════════════════════════════ -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Vélemények</div>
+        <h2 class="section-title">Ügyfeleink <span class="gradient-text">azt mondják</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card reveal-up" style="--delay:0s" id="testi-1">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Kiváló szerviz! A MacBookom képernyője egy nap alatt cserélve lett, és az ár is nagyon korrekt volt. Mindenképpen ajánlom!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">K.É</div>
+            <div>
+              <strong>Kovács Éva</strong>
+              <span>Székesfehérvár</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--delay:0.1s" id="testi-2">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Az irodai számítógépünk teljesen leállt. SSD-re cserélték a merevlemezt, most gyorsabb, mint valaha. Nagyon megbízhatóak."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">N.B</div>
+            <div>
+              <strong>Nagy Béla</strong>
+              <span>Székesfehérvár</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--delay:0.2s" id="testi-3">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Vírusok miatt teljesen befagyott a gépem. Gyorsan megoldották, és mindent elmagyaráztak. Profi csapat, korrekt emberek."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">S.M</div>
+            <div>
+              <strong>Szabó Márton</strong>
+              <span>Polgárdi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CALCULATOR ════════════════════════════════ -->
+  <section id="calculator" class="calc-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Kalkulátor</div>
+        <h2 class="section-title">Szerviz díj<br/><span class="gradient-text">becslés</span></h2>
+        <p class="section-desc">Válassza ki az eszközt és a problémát egy azonnali, tájékoztató jellegű árajánlathoz.</p>
+      </div>
+
+      <div class="calc-card reveal-up" style="--delay:0.1s">
+        <div class="calc-inputs">
+          <div class="form-group">
+            <label for="calc-device">Eszköz típusa</label>
+            <select id="calc-device">
+              <option value="">Válasszon...</option>
+              <option value="macbook">MacBook (Air / Pro)</option>
+              <option value="imac">iMac / Mac Mini</option>
+              <option value="laptop">Windows Laptop</option>
+              <option value="pc">Asztali PC</option>
+              <option value="phone">iPhone / iPad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calc-problem">Probléma</label>
+            <select id="calc-problem" disabled>
+              <option value="">Előbb válasszon eszközt...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-result" id="calc-result">
+          <div class="calc-result-label">Becsült javítási költség</div>
+          <div class="calc-price" id="calc-price">---</div>
+          <p class="calc-note">Az ár tájékoztató jellegű, pontos árat a bevizsgálás után tudunk adni.</p>
+          <button class="btn-primary" id="calc-to-contact" disabled>Tovább a kapcsolatfelvételhez</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info reveal-left">
+          <div class="section-tag">Kapcsolat</div>
+          <h2 class="section-title">Vegye fel<br/><span class="gradient-text">velünk a kapcsolatot</span></h2>
+          <p class="contact-desc">Készen állunk segíteni. Hívjon, írjon Facebookon, vagy látogasson el hozzánk Székesfehérváron!</p>
+          
+          <div class="contact-cards">
+            <a href="tel:+36203986002" class="contact-card" id="contact-phone">
+              <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+              <div>
+                <strong>Telefon</strong>
+                <span>+36 20 398 6002</span>
+              </div>
+              <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584975975354" target="_blank" class="contact-card" id="contact-fb">
+              <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></div>
+              <div>
+                <strong>Facebook</strong>
+                <span>PC-Mac Szervíz Székesfehérvár</span>
+              </div>
+              <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <div class="contact-card" id="contact-location">
+              <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+              <div>
+                <strong>Helyszín</strong>
+                <span>Székesfehérvár és környéke</span>
+              </div>
+            </div>
+            <div class="contact-card" id="contact-hours">
+              <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+              <div>
+                <strong>Nyitvatartás</strong>
+                <span>H–P: 9:00–18:00 | Szo: Egyeztetés szerint</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <h3>Küldjön üzenetet</h3>
+            <div class="form-group">
+              <label for="name">Név</label>
+              <input type="text" id="name" name="name" placeholder="Az Ön neve" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefonszám</label>
+              <input type="tel" id="phone" name="phone" placeholder="+36 XX XXX XXXX" />
+            </div>
+            <div class="form-group">
+              <label for="device">Eszköz típusa</label>
+              <select id="device" name="device">
+                <option value="">Válasszon...</option>
+                <option>MacBook Air / Pro</option>
+                <option>iMac / Mac Mini</option>
+                <option>Windows Laptop</option>
+                <option>Asztali PC</option>
+                <option>iPhone / iPad</option>
+                <option>Egyéb</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Probléma leírása</label>
+              <textarea id="message" name="message" rows="4" placeholder="Írja le röviden a problémát..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="form-submit-btn">
+              Üzenet küldése
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note">* Az üzenetek Facebookon keresztül érnek el minket. Hamarosan felvesszük Önnel a kapcsolatot.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-mark">
+          <span class="logo-pc">PC</span><span class="logo-sep">·</span><span class="logo-mac">MAC</span>
+        </div>
+        <span class="logo-text">Szervíz</span>
+        <p>Székesfehérvár legjobb számítógép szervize</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Szolgáltatások</a>
+        <a href="#why">Rólunk</a>
+        <a href="#process">Folyamat</a>
+        <a href="#contact">Kapcsolat</a>
+        <a href="tel:+36203986002">+36 20 398 6002</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61584975975354" target="_blank" class="social-btn" id="footer-fb-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PC-Mac Szervíz Székesfehérvár. Minden jog fenntartva.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
